@@ -30,5 +30,156 @@
       sizes="32x32"
       href="../images/favicon-32.png" />
   </head>
-  <body></body>
+  <body class="container-fluid d-flex flex-column min-vh-100 px-0">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" aria-label="navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex" href="/">
+            <img
+              src="/images/mock-macon-county-north-carolina.png"
+              alt="Macon County, NC Seal"
+              class="nav-logo"
+              width="105" />
+            <div>
+              <span class="martel-extrabold">Macon County, NC</span>
+              <span class="d-block fs-6 text-white-50 martel-light"
+                >Franklin | Highlands | Nantahala | Otto</span
+              >
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 martel-sans-semibold">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/residents/">Residents</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/visitors/">Visitors</a>
+              </li>
+              <!-- Services Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/services/">Services</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Records</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Forms</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Community Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Community
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/community/">Community</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Announcements</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Events</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Government Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Government
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/government/">Government</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Commissioners</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Boards & Committees</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Agencies Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Agencies
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/agencies/">Agencies</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Emergency Services</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Board of Elections</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Search Form -->
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer class="mt-auto py-3 text-center text-white martel-light">
+      <p>5 West Main Street, Franklin, NC 28734 | (555) 555-5555</p>
+      <p>&copy; 2026 Macon County, NC</p>
+    </footer>
+  </body>
 </html>
