@@ -178,7 +178,7 @@
         </div>
       </nav>
       <!-- Breadcrumb -->
-      <nav class="nav-breadcrumb sticky-top" aria-label="breadcrumb">
+      <nav class="nav-breadcrumb" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">Residents</li>
@@ -213,6 +213,25 @@
             </h3>
             <div
               id="recordsAndForms"
+              class="accordion-collapse collapse"
+              data-bs-parent="#residentsAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#voterRegistration"
+                aria-expanded="false"
+                aria-controls="voterRegistration">
+                Voter Registration
+              </button>
+            </h3>
+            <div
+              id="voterRegistration"
               class="accordion-collapse collapse"
               data-bs-parent="#residentsAccordion">
               <p class="accordion-body"></p>
