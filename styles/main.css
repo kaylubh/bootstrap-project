@@ -2,14 +2,41 @@
 
 body {
   background-color: #f5f5f5;
-  font-family: 'Martel Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Martel Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Martel', serif;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'Martel', serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Martel', serif;
+  font-weight: 600;
+}
+
+a {
+  color: #004040;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #004040bf;
+  text-decoration: none;
 }
 
 /* HEADER */
+/* ---------------------------------------- */
 
-/* NAVIGATION */
+/* Navigation */
 
-nav {
+.navbar {
   background-color: #004040;
 }
 
@@ -22,13 +49,38 @@ nav {
   font-weight: 600;
 }
 
+/* Breadcrumb */
+
+.nav-breadcrumb {
+  margin: 1rem;
+  --bs-breadcrumb-divider: '>';
+}
+
+.breadcrumb-item.active {
+  color: #004040;
+  font-weight: 600;
+}
+
+/* ---------------------------------------- */
+
 /* MAIN */
+/* ---------------------------------------- */
+
+hr {
+  border-top: 2px solid #dbad6a;
+  opacity: 0.8;
+}
+
+/* ---------------------------------------- */
 
 /* FOOTER */
+/* ---------------------------------------- */
 
 footer {
   background-color: #004040;
 }
+
+/* ---------------------------------------- */
 
 /* FONTS */
 

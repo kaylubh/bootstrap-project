@@ -23,6 +23,7 @@
       rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/quick-links-page.css" />
     <!-- Favicon -->
     <link
       rel="icon"
@@ -32,6 +33,7 @@
   </head>
   <body class="container-fluid d-flex flex-column min-vh-100 px-0">
     <header>
+      <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark" aria-label="navigation">
         <div class="container-fluid">
           <a class="navbar-brand d-flex" href="/">
@@ -60,7 +62,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 martel-sans-semibold">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/residents/">Residents</a>
@@ -175,8 +177,225 @@
           </div>
         </div>
       </nav>
+      <!-- Breadcrumb -->
+      <nav class="nav-breadcrumb sticky-top" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Residents</li>
+        </ol>
+      </nav>
     </header>
-    <main></main>
+    <main class="container-fluid">
+      <section class="container-xxl">
+        <h1>Residents</h1>
+        <p class="lead">Welcome to the Residents page!</p>
+        <hr />
+      </section>
+      <section class="container-xxl">
+        <h2>Resident Services</h2>
+        <p>
+          Here you can find information about services available to residents of
+          Macon County, NC.
+        </p>
+        <!-- Resident Services Accordion List -->
+        <ul class="accordion accordion-flush" id="residentsAccordion">
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#recordsAndForms"
+                aria-expanded="false"
+                aria-controls="recordsAndForms">
+                Records & Forms
+              </button>
+            </h3>
+            <div
+              id="recordsAndForms"
+              class="accordion-collapse collapse"
+              data-bs-parent="#residentsAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#permitsAndLicenses"
+                aria-expanded="false"
+                aria-controls="permitsAndLicenses">
+                Permits and Licenses
+              </button>
+            </h3>
+            <div
+              id="permitsAndLicenses"
+              class="accordion-collapse collapse"
+              data-bs-parent="#residentsAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#notificationServices"
+                aria-expanded="false"
+                aria-controls="notificationServices">
+                Notification Services
+              </button>
+            </h3>
+            <div
+              id="notificationServices"
+              class="accordion-collapse collapse"
+              data-bs-parent="#residentsAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+        </ul>
+        <hr />
+      </section>
+      <section class="container-xxl">
+        <h2>Community Resources</h2>
+        <p>
+          Explore community resources and programs designed to support our
+          residents.
+        </p>
+        <!-- Community Resources Accordion List -->
+        <ul class="accordion accordion-flush" id="communityResourcesAccordion">
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#announcementsAndEvents"
+                aria-expanded="false"
+                aria-controls="announcementsAndEvents">
+                Announcements & Upcoming Events
+              </button>
+            </h3>
+            <div
+              id="announcementsAndEvents"
+              class="accordion-collapse collapse"
+              data-bs-parent="#communityResourcesAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#eventPlanning"
+                aria-expanded="false"
+                aria-controls="eventPlanning">
+                Event Planning
+              </button>
+            </h3>
+            <div
+              id="eventPlanning"
+              class="accordion-collapse collapse"
+              data-bs-parent="#communityResourcesAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#supportServices"
+                aria-expanded="false"
+                aria-controls="supportServices">
+                Support Services
+              </button>
+            </h3>
+            <div
+              id="supportServices"
+              class="accordion-collapse collapse"
+              data-bs-parent="#communityResourcesAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+        </ul>
+        <hr />
+      </section>
+      <section class="container-xxl">
+        <h2>Government</h2>
+        <p>
+          Learn about the local government and agencies that serve our
+          residents.
+        </p>
+        <!-- Government Accordion List -->
+        <ul class="accordion accordion-flush" id="governmentAccordion">
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#publicSafety"
+                aria-expanded="false"
+                aria-controls="publicSafety">
+                Public Safety
+              </button>
+            </h3>
+            <div
+              id="publicSafety"
+              class="accordion-collapse collapse"
+              data-bs-parent="#governmentAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#parksAndRecreation"
+                aria-expanded="false"
+                aria-controls="parksAndRecreation">
+                Parks & Recreation
+              </button>
+            </h3>
+            <div
+              id="parksAndRecreation"
+              class="accordion-collapse collapse"
+              data-bs-parent="#governmentAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#maconCountySchools"
+                aria-expanded="false"
+                aria-controls="maconCountySchools">
+                Macon County Schools
+              </button>
+            </h3>
+            <div
+              id="maconCountySchools"
+              class="accordion-collapse collapse"
+              data-bs-parent="#governmentAccordion">
+              <p class="accordion-body"></p>
+            </div>
+          </li>
+        </ul>
+        <hr />
+      </section>
+    </main>
     <footer class="mt-auto py-3 text-center text-white martel-light">
       <p>5 West Main Street, Franklin, NC 28734 | (555) 555-5555</p>
       <p>&copy; 2026 Macon County, NC</p>
