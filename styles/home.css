@@ -1,0 +1,37 @@
+/* Carousel */
+
+#homeCarousel {
+  border: 5px solid #dbad6a;
+  padding: 0;
+  box-shadow: 0 0 10px #dbad6a80;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-item img {
+    height: 500px;
+  }
+}
+
+/* Events Aside */
+
+#upcomingEvents {
+  height: 400px;
+  overflow-y: auto;
+}
+
+span.rounded-pill {
+  font-size: 0.875rem;
+  font-weight: 400;
+}

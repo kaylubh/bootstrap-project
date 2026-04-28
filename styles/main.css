@@ -44,6 +44,12 @@ a:focus {
   border-color: #004040bf;
 }
 
+.btn-secondary {
+  background-color: #dbad6a;
+  border-color: #dbad6a;
+  font-size: 0.875rem;
+}
+
 /* HEADER */
 /* ---------------------------------------- */
 
