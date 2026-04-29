@@ -32,6 +32,7 @@
   </head>
   <body class="container-fluid d-flex flex-column min-vh-100 px-0">
     <header>
+      <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark" aria-label="navigation">
         <div class="container-fluid">
           <a class="navbar-brand d-flex" href="/">
@@ -40,9 +41,9 @@
               alt="Macon County, NC Seal"
               class="nav-logo"
               width="105" />
-            <div>
-              <span class="martel-extrabold">Macon County, NC</span>
-              <span class="d-block fs-6 text-white-50 martel-light"
+            <div class="d-flex flex-column justify-content-center">
+              <span id="navTitle">Macon County, NC</span>
+              <span id="navSubtitle" class="d-block text-white-50"
                 >Franklin | Highlands | Nantahala | Otto</span
               >
             </div>
@@ -58,9 +59,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 martel-sans-semibold">
+            <ul
+              class="navbar-nav flex-wrap me-auto mb-2 mb-lg-0 martel-sans-semibold">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/residents/">Residents</a>
@@ -164,11 +166,15 @@
             <!-- Search Form -->
             <form class="d-flex" role="search">
               <input
+                id="navSearchInput"
                 class="form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">
+              <button
+                id="navSearchBtn"
+                class="btn btn-outline-secondary"
+                type="submit">
                 Search
               </button>
             </form>
